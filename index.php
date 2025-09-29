@@ -19,8 +19,9 @@ $query = mysqli_query($con, $sql);
 
 <body>
     <div class="users-form">
-        <h1>Crear usuario</h1>
+        <div class="imagen"><img src="/cropped-Cucuta_Deportivo_2022.png" alt=""></div>
         <form action="insert_user.php" method="POST">
+            <h1>Crear nuevo barrista    </h1>
             <input type="text" name="name" placeholder="Nombre">
             <input type="text" name="lastname" placeholder="Apellidos">
             <input type="text" name="username" placeholder="Username">
@@ -32,7 +33,7 @@ $query = mysqli_query($con, $sql);
     </div>
 
     <div class="users-table">
-        <h2>Usuarios registrados</h2>
+        <h2>Usuarios de la perla del norte</h2>
         <table>
             <thead>
                 <tr>
@@ -61,6 +62,7 @@ $query = mysqli_query($con, $sql);
                 <?php endwhile; ?>
             </tbody>
         </table>
+        <div><img class="xd" src="image.png" alt=""></div>
     </div>
 
 </body>
